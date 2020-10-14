@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱奇艺</title>
+
+    <link rel="stylesheet" href="./tool/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./tool/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="./tool/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="./tool/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+
+<body>
+
+    <div class="iqiyi_page_wrap">
+        <header class="qy_header" id="top">
+            <div class="header_wrap">
+                <div class="header_inner">
+                    <div class="nav_logo"></div>
+                    <div class="header_side">
+                        <div class="header_search_wrap">
+                            <div class="search_box">
+                                <div class="search_box_in">
+                                    <div class="search_box_input">
+                                        <input type="text" size="29" placeholder="中国新说唱">
+                                    </div>
+                                    <div class="search_hot">
+                                        <a href="#">
+                                            <i class="fa fa-fire" aria-hidden="true"></i>
+                                            热搜榜
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="search_btn">
+                                    <div class="search_btn_icon">
+                                        <a href="#">
+                                            <i class="fa fa-search " aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav_icons">
+                            <div class="nav_vip nav_icon">
+                                <div class="nav_vip_icon">
+                                    <i class="fa fa-vimeo fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">VIP</span>
+                                </div>
+                                <div class="nav_vip_pop">
+                                    <div class="nav_pop_box">
+                                        <div class="nav_pop_box_triangle"></div>
+                                        <div class="nav_pop_vipCon">
+                                            <ul class="nav_vip_list">
+                                                <li class="nav_vip_item"><a href="#">
+                                                        <i class="fa fa-vimeo nav_vip_item_icon" aria-hidden="true"></i>
+                                                        了解VIP会员特权
+                                                    </a></li>
+                                                <li class="nav_vip_item"><a href="#">
+                                                        <i class="fa fa-life-ring nav_vip_item_icon"
+                                                            aria-hidden="true"></i>
+                                                        领取VIP会员福利
+                                                    </a></li>
+                                                <li class="nav_vip_item"><a href="#">
+                                                        <i class="fa fa-gift" aria-hidden="true"></i>
+                                                        做任务，领奖励
+                                                    </a></li>
+                                                <li class="nav_vip_item"><a href="#">
+                                                        <i class="fa fa-diamond nav_vip_item_icon"
+                                                            aria-hidden="true"></i>
+                                                        星钻VIP享新权益
+                                                    </a></li>
+                                            </ul>
+                                            <div class="nav_vip_pop_btn">
+                                                <div class="nav_vip_pop_btn_in">
+                                                    <a href="#">立即续费</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_game nav_icon">
+                                <div class="nav_game_icon">
+                                    <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">游戏</span>
+                                </div>
+                                <div class="nav_game_pop">
+                                    <div class="nav_pop_game_triangle"></div>
+                                    <div class="nav_pop_gameCon">
+                                        <ul class="nav_game_list">
+                                            <li class="nav_game_item"><a href="#">
+                                                    <img src="./images/nav_game_img1.png" alt="暗黑天使" title="暗黑天使">
+                                                </a></li>
+                                            <li class="nav_game_item"><a href="#">
+                                                    <img src="./images/nav_game_img2.jpg" alt="封天战神" title="封天战神">
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav_game_btn">
+                                        <a href="#">查看更多</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="nav_upload nav_icon">
+                                <div class="nav_upload_icon">
+                                    <i class="fa fa-cloud-upload fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">上传</span>
+                                </div>
+                                <div class="nav_upload_pop">
+                                    <div class="nav_pop_upload_triangle"></div>
+                                    <div class="nav_pop_uploadCon">
+                                        <ul class="nav_upload_list">
+                                            <li class="nav_upload_item"><a href="#">
+                                                    <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    作品上传
+                                                </a></li>
+                                            <li class="nav_upload_item"><a href="#">
+                                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                                    作品管理
+                                                </a></li>
+                                            <li class="nav_upload_item"><a href="#">
+                                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                    爱奇艺号
+                                                </a></li>
+                                            <li class="nav_upload_item"><a href="#">
+                                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                    我的空间
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_appDown nav_icon">
+                                <div class="nav_appDown_icon">
+                                    <i class="fa fa-television fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">客户端</span>
+                                </div>
+                                <div class="nav_appDown_pop">
+                                    <div class="nav_pop_upload_triangle"></div>
+                                    <div class="nav_pop_appDowndCon">
+                                        <ul class="nav_appDown_list">
+                                            <li class="nav_appDown_item"><a href="#">
+                                                    <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                                                    新用户广告特权
+                                                </a></li>
+                                            <li class="nav_appDown_item"><a href="#">
+                                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                                    急速流畅播放
+                                                </a></li>
+                                            <li class="nav_appDown_item"><a href="#">
+                                                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                                                    畅想4K视频
+                                                </a></li>
+                                        </ul>
+                                        <div class="nav_appDown_btn">
+                                            <div class="nav_appDown_btn_in">
+                                                <a href="#">立即体验</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_message nav_icon">
+                                <div class="nav_message_icon ">
+                                    <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">消息</span>
+                                </div>
+                                <div class="nav_message_pop">
+                                    <div class="nav_pop_upload_triangle"></div>
+                                    <div class="nav_pop_message">
+                                        <ul class="nav_message_list">
+                                            <li class="nav_message_item">
+                                                <a href="#">更新提醒</a>
+                                            </li>
+                                            <li class="nav_message_item">
+                                                <a href="#">与我相关</a>
+                                            </li>
+                                            <li class="nav_message_item">
+                                                <a href="#">系统通知</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav_message_content">
+                                        <div class="nav_message_in">
+                                            <p>暂时还没有新的消息噢~</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_history nav_icon">
+                                <div class="nav_history_icon">
+                                    <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                                    <span class="nav_icon_span">看过</span>
+                                </div>
+                                <div class="nav_history_pop">
+                                    <div class="nav_pop_history_triangle"></div>
+                                    <div class="nav_history_list">
+                                        <div class="nav_history_week">
+                                            <div class="record_time">
+                                                <i class="time_icon">●</i>
+                                                <span class="time-tips">本周</span>
+                                            </div>
+                                            <div class="record_list">
+                                                <div class="record_list">
+                                                    <ul>
+                                                        <li class="record_item">
+                                                            <div class="record_item_left left">
+                                                                <img class="left_img"
+                                                                    src="./images/3693ac261c7040f09a4a5d02714eb313.webp"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="record_item_right left">
+                                                                <h3 class="record_item_right_title">
+                                                                    中国新说唱第三季ssssssssssssssssssssssssssssssssss</h3>
+                                                                <div class="record_item_right_progress">
+                                                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                                    <span>80%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="record_item">
+                                                            <div class="record_item_left left">
+                                                                <img class="left_img"
+                                                                    src="./images/3693ac261c7040f09a4a5d02714eb313.webp"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="record_item_right left">
+                                                                <h3 class="record_item_right_title">
+                                                                    中国新说唱第三季ssssssssssssssssssssssssssssssssss</h3>
+                                                                <div class="record_item_right_progress">
+                                                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                                    <span>80%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="record_item">
+                                                            <div class="record_item_left left">
+                                                                <img class="left_img"
+                                                                    src="./images/3693ac261c7040f09a4a5d02714eb313.webp"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="record_item_right left">
+                                                                <h3 class="record_item_right_title">
+                                                                    中国新说唱第三季ssssssssssssssssssssssssssssssssss</h3>
+                                                                <div class="record_item_right_progress">
+                                                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                                    <span>80%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav_history_early">
+                                            <div class="record_time">
+                                                <i class="time_icon">●</i>
+                                                <span class="time-tips">更早</span>
+                                            </div>
+                                            <div class="record_list">
+                                                <ul>
+                                                    <li class="record_item">
+                                                        <div class="record_item_left left">
+                                                            <img class="left_img"
+                                                                src="./images/3693ac261c7040f09a4a5d02714eb313.webp"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="record_item_right left">
+                                                            <p class="record_item_right_title">
+                                                                中国新说唱第三季ssssssssssssssssssssssssssssssssss</p>
+                                                            <div class="record_item_right_progress">
+                                                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                                <span>80%</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nav_history_btn">
+                                        查看更多
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_user nav_icon">
+                                <div class="nav_user_icon">
+                                    <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="nav_user_pop">
+                                    <div class="nav_pop_user_triangle"></div>
+                                    <div class="nav_user_content">
+                                        <div class="nav_user_top">
+                                            <div class="nav_user_person">
+                                                <div class="user_head left ">
+                                                    <i class="fa fa-user-o fa-4x" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="user_name left">
+                                                    <div>
+                                                        <span class="user_ho">特赢婷</span>
+                                                    </div>
+                                                    <span class="user_ho">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        105
+                                                    </span>
+                                                </div>
+                                                <div class="nav_user_center right user_ho">
+                                                    进入个人中心>
+                                                </div>
+                                                <div class=" nav_user_card">
+                                                    <div class="nav_user_card_left">
+                                                        <div class="left">VIP会员</div>
+                                                        <div class="right card_vip">开通连续包月</div>
+                                                        <div class="left card_time">2019-09-19过期</div>
+                                                    </div>
+                                                    <div class="nav_user_card_right">
+                                                        <div class="left">体育会员</div>
+                                                        <div class="right card_btn">开通</div>
+                                                        <div class="left card_tip">畅想精彩体育赛事</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav_user_bottom">
+                                            <div class="user_fun">
+                                                <div class="my_attention">
+
+                                                    <i class="fa fa-user-o fa-2x fun_icon" aria-hidden="true"></i>
+                                                    <span>我的关注</span>
+
+                                                </div>
+                                                <div class="my_collection">
+                                                    <i class="fa fa-user-o fa-2x fun_icon" aria-hidden="true"></i>
+                                                    <span>我的收藏</span>
+                                                </div>
+                                                <div class="my_order">
+                                                    <i class="fa fa-user-o fa-2x fun_icon" aria-hidden="true"></i>
+                                                    <span>我的预约</span>
+                                                </div>
+                                                <div class="my_setting">
+                                                    <i class="fa fa-user-o fa-2x fun_icon" aria-hidden="true"></i>
+                                                    <span>我的设置</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="user_help ">
+                                                <div class="user_help_left left">
+                                                    帮助中心
+                                                </div>
+                                                <div class="user_help_right right">
+                                                    退出
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="video_bg">
+            <div class="video_bg_inner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active bg-img">
+                            <img src="./images/ChMkJlbKxaSINQEqABn6gp7Xk9IAALHZAGt5w4AGfqa064.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item bg-img">
+                            <img src="./images/ChMkJ1bKxgaIRw_2AAQ4GG0SmjkAALHfADqI6QABDgw825.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item bg-img">
+                            <img src="./images/ChMkJlbpAqaIcezsAAPOignP7lAAANu3QIcEA8AA86i749.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <nav>
+            <div class="nav_movie_inner">
+                <div class="nav_movie_left left">
+                    <div class="movie_left_film">
+                        <span class="nav_name nav_name_text_ho"><a href="#">电影</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">热播大片</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">全部电影</a></span>
+                    </div>
+                    <div class="movie_left_TV">
+                        <span class="nav_name nav_name_text_ho"><a href="#">电视剧</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">迷雾剧场</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">爱青春</a></span></div>
+                    <div class="movie_left_variety">
+                        <span class="nav_name nav_name_text_ho"><a href="#">综艺</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">王牌自制</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">最新热播</a></span></div>
+                    <div class="movie_left_anime">
+                        <span class="nav_name nav_name_text_ho"><a href="#">动漫</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">最热国漫</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">最新动画</a></span></div>
+                    <div class="movie_left_cartoon">
+                        <span class="nav_name nav_name_text_ho"><a href="#">儿童</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">热播动画</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">最新动画</a></span></div>
+                    <div class="movie_left_documentary">
+                        <span class="nav_name nav_name_text_ho"><a href="#">纪录片</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">热播剧场</a></span>
+                        <span class="nav_text nav_name_text_ho"><a href="#">探索世界</a></span></div>
+                </div>
+                <div class="movie_nav_center left">
+                    <div class="left movie_nav_center_item">
+                        <ul>
+                            <li><a href="#">热点</a></li>
+                            <li><a href="#">教育</a></li>
+                            <li><a href="#">资讯</a></li>
+                        </ul>
+                    </div>
+                    <div class="left movie_nav_center_item">
+                        <ul>
+                            <li><a href="#">娱乐</a></li>
+                            <li><a href="#">体育</a></li>
+                            <li><a href="#">财经</a></li>
+                        </ul>
+                    </div>
+                    <div class="left movie_nav_center_item">
+                        <ul>
+                            <li><a href="#">风云榜</a></li>
+                            <li><a href="#">泡泡</a></li>
+                            <li><a href="#">搞笑</a></li>
+                        </ul>
+                    </div>
+                    <div class="left movie_nav_center_item">
+                        <ul>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">公益</a></li>
+                            <li><a href="#">军事</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="movie_nav_right left">
+                    <ul>
+                        <li><a href="#" style="color: #e2b987;">会员精选</a></li>
+                        <li><a href="#">直播中心</a></li>
+                        <li><a href="#">更多</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="aside-nav">
+            <ul>
+                <li><a href="#mainTV">电视剧</a></li>
+                <li><a href="#mainMOVIE">电影</a></li>
+                <li><a href="#mainPLAY">娱乐</a></li>
+                <li><a href="#mainFAMILY">家庭 剧场</a></li>
+                <li><a href="#mainZHIBO">直播 中心</a></li>
+                <li><a href="#mainADV">广告</a></li>
+                <li><a href="#mainJILU">纪录片</a></li>
+                <li><a href="#mainDAOMU">系列片</a></li>
+                <li><a href="#mainSHENGHUA">猜你 喜欢</a></li>
+                <li><a href="#top">回到 顶部</a></li>
+            </ul>
+        </div>
+        <!-- main1 -->
+        <div class="main1">
+            <div class="main1_innner">
+                <div class="main1_block">
+                    <img src="./images/main1a1.jpg" alt="">
+                    <div class="main1_block_title">杨妈翻牌幸运歌迷范丞丞</div>
+                </div>
+                <div class="main1_block">
+                    <img src="./images/main1a2.webp" alt="">
+                    <div class="main1_block_title">仁科《地球仪》嘶吼炸裂</div>
+                </div>
+                <div class="main1_block">
+                    <img src="./images/main1a3.jpg" alt="">
+                    <div class="main1_block_title">谭咏麟容祖儿强势开唱</div>
+                </div>
+                <div class="main1_block">
+                    <img src="./images/main1a4.jpg" alt="">
+                    <div class="main1_block_title">台湾间谍窃密案件被破获</div>
+                </div>
+                <div class="main1_block">
+                    <img src="./images/maina5.jpg" alt="">
+                    <div class="main1_block_title">青岛发现6例新冠确诊病例</div>
+                </div>
+            </div>
+        </div>
+        <!-- main2 -->
+        <div class="main2" id="mainTV">
+            <div class="main2_inner">
+                <div class="main3_inner_left left">
+                    <div class="main2_inner_leftt_top">
+                        <div class="left inner_leftt_top_title">电视剧</div>
+                        <div class="left">
+                            <ul id="main2_inner_leftt_top_list">
+                                <li>内地</li>
+                                <li>|</li>
+                                <li>自制剧</li>
+                                <li>|</li>
+                                <li>网络剧</li>
+                                <li>|</li>
+                                <li>迷雾剧场</li>
+                                <li>|</li>
+                                <li>爱青春剧场</li>
+                                <li>|</li>
+                                <li>神剧亮了</li>
+                                <li>|</li>
+                                <li>更多></li>
+
+                            </ul>
+                        </div>
+                        <div class="right" style="margin-right: 10px;">
+                            <div id="turnBtn1"></div>
+                            <a class="btnLeft"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+                            <a class="btnRight"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="main2_inner_leftt_bottom">
+                        <div class="outer">
+                            <div class="box">
+                                <ul class="inner" id="inner">
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img src="./images/main2a1.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至10集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">妖怪名单</div>
+                                                <div class="box_inner_li_div_botton_des">于朦胧邢菲侠义爱恋</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/c7510c7ca9f14e3fab3b4d3cf8bd9912.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至15集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">夏日冲浪店</div>
+                                                <div class="box_inner_li_div_botton_des">罗云熙白鹿半糖蜜恋</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_150493678_m_601_m5_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至12集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">大幻术师</div>
+                                                <div class="box_inner_li_div_botton_des">黄轩陈赫狙击对决</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151266520_m_601_m5_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至19集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">阿波罗计划寒</div>
+                                                <div class="box_inner_li_div_botton_des">冯绍峰袁姗姗创业奋斗</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/fa47ac206acc4e80950f29343e0d9100.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/only.png" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">大唐帝陵</div>
+                                                <div class="box_inner_li_div_botton_des">朱一龙解锁雷城之谜</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151592739_m_601_m6_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/VIP@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至4集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">怪物先生</div>
+                                                <div class="box_inner_li_div_botton_des">于朦胧邢菲侠义爱恋</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_144866003_m_601_m8_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/only.png" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">辣警霸王花</div>
+                                                <div class="box_inner_li_div_botton_des">冯绍峰袁姗姗创业奋斗</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151060536_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至10集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">幸福里的故事</div>
+                                                <div class="box_inner_li_div_botton_des">李晨王晓晨时代风貌</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100366867_m_601_m1_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">明月曾照江东寒</div>
+                                                <div class="box_inner_li_div_botton_des">于朦胧邢菲侠义爱恋</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/9356bbe386f94586b7ae9416d91cba84.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至9集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">乐队的夏天</div>
+                                                <div class="box_inner_li_div_botton_des">张俪高瀚宇商战爱情</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_150918960_m_601_m7_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至17集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">沙海神龙</div>
+                                                <div class="box_inner_li_div_botton_des">朱一龙解锁雷城之谜</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151343128_m_601_m2_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至1集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">英雄</div>
+                                                <div class="box_inner_li_div_botton_des">马梦唯敖瑞鹏甜蜜同居</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_131398334_m_601_m22_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">征途</div>
+                                                <div class="box_inner_li_div_botton_des">抗疫题材时代报告</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_150990887_m_601_m8_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至23集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">十三猎杀</div>
+                                                <div class="box_inner_li_div_botton_des">范世錡吕小雨古装奇遇</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_150336464_m_601_m10_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至45集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">卧底</div>
+                                                <div class="box_inner_li_div_botton_des">董子健张嘉倪医疗情缘</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_141079770_m_601_m11_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至12集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">妙先生</div>
+                                                <div class="box_inner_li_div_botton_des">张俪高瀚宇商战爱情</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main3_inner_right left">
+                    <div class="main2_inner_right_innner">
+                        <div class="main2_inner_right_top">
+                            <span class="main2_inner_right_top_title">风云榜</span>
+                            <span class="main2_inner_right_top_all">全部榜单>></span>
+                        </div>
+                        <div class="main2_inner_right_bottom">
+                            <ul>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left first left">1</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">半是蜜糖半是伤</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">7350</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left second left">2</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">重启之极海听雷...</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">6889</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left third left">3</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">明月曾照江东寒</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">5875</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">4</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">凤唳九天</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">5723</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">5</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">瞄准</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">5715</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">6</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">在一起</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">5491</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">7</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">小大夫</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">5328</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">8</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">沉默的真相</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4964</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">9</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">三嫁惹军心</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4796</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal" style="padding-left: 3px;">
+                                        10
+                                    </div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">正道无敌</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4266</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main3 -->
+        <div class="main3" id="mainMOVIE">
+            <div class="main3_inner">
+                <div class="main3_inner_left left">
+                    <div class="main3_inner_leftt_top">
+                        <div class="left inner_leftt_top_title">电影</div>
+                        <div class="left">
+                            <ul id="main3_inner_leftt_top_list">
+                                <li>爱奇艺爱电影</li>
+                                <li>|</li>
+                                <li>爱奇艺文艺院线</li>
+                                <li>|</li>
+                                <li>爱奇艺独播专区</li>
+                                <li>|</li>
+                                <li>爱奇艺网络电影</li>
+                                <li>|</li>
+                                <li>系列电影尽享刷</li>
+                                <li>|</li>
+                                <li>更多></li>
+
+                            </ul>
+                        </div>
+                        <div class="right" style="margin-right: 10px;">
+                            <div id="turnBtn2"></div>
+                            <a class="btnLeft"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+                            <a class="btnRight"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="main2_inner_leftt_bottom">
+                        <div class="outer">
+                            <div class="box">
+                                <ul class="inner" id="inner1">
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_112870753_m_601_m11_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">哥斯拉2</div>
+                                                <div class="box_inner_li_div_botton_des">2037人类存亡危机</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100016485_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">恐龙</div>
+
+                                                <div class="box_inner_li_div_botton_des">神秘海域狂蛛噬人</div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100261573_m_601_m6_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">太平洋战争</div>
+                                                <div class="box_inner_li_div_botton_des">于朦胧邢菲侠义爱恋</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100117057_m_601_m2_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">生门</div>
+                                                <div class="box_inner_li_div_botton_des">叶问大战“蒙丹”</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_120027712_m_601_m15_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">抵达之谜</div>
+                                                <div class="box_inner_li_div_botton_des">李鸿其穿越续前缘</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100038946_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">河西走廊</div>
+                                                <div class="box_inner_li_div_botton_des">神僧谢苗坠狱成魔</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100410840_m_601_m6_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">锁龙井</div>
+                                                <div class="box_inner_li_div_botton_des">孙耀威防疫抗怪兽</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100236370_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">人世间</div>
+                                                <div class="box_inner_li_div_botton_des">成龙&杨洋整装待发</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100301955_m_601_m1_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">荞麦疯长</div>
+                                                <div class="box_inner_li_div_botton_des">孽龙复生祸乱朝纲</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100419603_m_601_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">刺猬索尼克</div>
+                                                <div class="box_inner_li_div_botton_des">外星刺猬突袭地球</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100357033_m_601_m6_120_160.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">门神</div>
+                                                <div class="box_inner_li_div_botton_des">郑秀文陷谋杀疑局</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100352671_m_601_120_160.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">1917</div>
+                                                <div class="box_inner_li_div_botton_des">年度高分必看！</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151343128_m_601_m2_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">急先锋</div>
+                                                <div class="box_inner_li_div_botton_des">郑秀文陷谋杀疑局</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100232366_m_601_m14_120_160.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">停电</div>
+                                                <div class="box_inner_li_div_botton_des">人肉坦克大战</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_151266520_m_601_m5_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">少林降魔</div>
+                                                <div class="box_inner_li_div_botton_des">神僧谢苗坠狱成魔</div>
+                                            </div>
+                                        </div>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100019990_m_601_m3_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/self@2x.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">极限杀手</div>
+                                                <div class="box_inner_li_div_botton_des">最强杀手宝刀不</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main3_inner_right left">
+                    <div class="main2_inner_right_innner">
+                        <div class="main2_inner_right_top">
+                            <span class="main2_inner_right_top_title">风云榜</span>
+                            <span class="main2_inner_right_top_all">全部榜单>></span>
+                        </div>
+                        <div class="main2_inner_right_bottom">
+                            <ul>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left first left">1</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">锁龙井</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4371</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left second left">2</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">1971</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4277</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left third left">3</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">唐人街小炮2</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4273</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">4</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">我在时间尽头等你</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">4088</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">5</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">叶问少年之危机</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3752</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">6</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">怒海狂蛛</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3579</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">7</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">东北往事：我叫...</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3468</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">8</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">我和我的祖国</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3337</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal">9</div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">新封神姜子牙</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3200</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main2_inner_right_bottom_li_left left nomal" style="padding-left: 3px;">
+                                        10
+                                    </div>
+                                    <div class="main2_inner_right_bottom_li_right left">
+                                        <div class="main2_inner_right_bottom_li_right_title">凡乌托邦</div>
+
+                                        <div class="main2_inner_right_bottom_li_right_hot">
+                                            <i class="fa fa-fire fire2" aria-hidden="true"></i>
+                                            <span class="main2_inner_right_bottom_li_right_hot_span">3000</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main4 -->
+        <div class="main4" id="mainPLAY">
+            <div class="main4_inner">
+                <div class="inner-top">
+                    <div class="inner-top-title left">娱乐</div>
+                    <div class="inner-top-list left">
+                        <ul>
+                            <li>《明星玩家》玩独家游戏</li>
+                            <li>|</li>
+                            <li>《来自星星的TA》分享幕后故事</li>
+                            <li>|</li>
+                            <li>做家务的男人范丞丞郭麒麟囧事多</li>
+                            <li>|</li>
+                            <li>二十不惑·20岁的20问</li>
+                            <li>|</li>
+                            <li>青春环游记2最新资讯</li>
+                            <li>|</li>
+                            <li>更多>></li>
+                        </ul>
+                    </div>
+                    <div class="inner-top-btn right">
+                        <div id="turnBtn3"></div>
+                        <a class="btnLeft"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+                        <a class="btnRight"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="inner_bottom">
+                    <div class="outer4">
+                        <div class="box">
+                            <ul class="inner" id="inner3">
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/94792eccbc014ce1a56674b5aa55f256.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">《好心情提味》预告：给生活加点料！10.12起和朱星杰一</div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/7a701709438241878d9ab589d1aea083.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">《好心情提味》第一期上线！扬言对打《脱口秀</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/2e0fc8c3d9fe47349fe838e5be8820be.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">周深现场喊话生米交作业 自嘲距离偶像艺人还差</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/530460906e9a4ca5b4be2693fb032be1.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">【THE9非日常加载中】“喝彩CP”售后完美，虞</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/dbcbea016e774e0fad2e04e0e4f2a477.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">盘点影视剧中的心动小粉红！宋威龙配二女？搭</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/347ffeea2cf040a59897218573981c1f.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">刘昊然宋威龙许凯唱歌“索命”整场垮掉太搞笑，一</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/50443412c76d400bb264097f798c394b.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">UNINE管栎回忆《青你》“尴尬”现场，笑容都挂</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/35aa6625b0d64f6c891f53add077235d.jpg" width="220px"
+                                                height="124px">
+                                        </div>
+                                        <div class="inner-des">Dua Lipa又为韩国女团作曲 TWICE加入韩流闯美</div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 家庭电视剧榜 -->
+        <div class="main6" id="mainFAMILY">
+            <div class="main6-inner">
+                <div class="main6-inner-top">家庭电视剧榜</div>
+                <ul class="main6-inner-list">
+                    <li>
+                        <div>
+                            <img src="./images/v_150861717_m_601_m1_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">暖春</div>
+                            <div class="main6-inner-list-span">泪水浸泡出的苦情力作</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_108739609_m_601_m11_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">菩提树下</div>
+                            <div class="main6-inner-list-span">被置换的人生</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50587002_m_601_m19_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">风影</div>
+                            <div class="main6-inner-list-span">热血儿女抗战致青春</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_115502937_m_601_m13_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">娘心机</div>
+                            <div class="main6-inner-list-span">缫丝豪门弃子寻仇记</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_112880060_m_601_m4_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">窗洞光</div>
+                            <div class="main6-inner-list-span">一部不屈的家国抗争史</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50377451_m_601_m9_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">剧中人</div>
+                            <div class="main6-inner-list-span">张一山潘粤明乱世兄弟</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="main5" id="mainZHIBO">
+            <div class="main4_inner">
+                <div class="inner-top">
+                    <div class="inner-top-title left">直播中心</div>
+                    <div class="inner-top-list left">
+                        <ul>
+                            <li>奇秀新星</li>
+                            <li>|</li>
+                            <li>美女</li>
+                            <li>|</li>
+                            <li>游戏</li>
+                            <li>|</li>
+                            <li>一起看</li>
+                            <li>|</li>
+                            <li>更多>></li>
+                        </ul>
+                    </div>
+                    <div class="inner-top-btn right">
+                        <div id="turnBtn4"></div>
+                        <a class="btnLeft"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+                        <a class="btnRight"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="inner_bottom">
+                    <div class="outer4">
+                        <div class="box">
+                            <ul class="inner" id="inner4">
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/qixiu_user_face_36f1b0def67a4a82b29278189170e4db_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">阳气（减肥俱乐部）</div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/xiuchang_f0580d73fa844fc49da54929cafd2b3b_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">干同学~萌妹子</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/qixiu_user_face_6509ce8bf3bf4b5aac50cee112600a53_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">小Cc 欢迎我阿目目</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/xiuchang_5cbfc4c1d2999d09276fa8a1_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">星光女团首秀</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/qixiu_user_face_40a2dcbe8ce5416ea9d55c0365f0e73a_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">盘丝洞-女团</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/xiuchang_791d08b53e0b4a47a69548ec9993f175_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">大柔啊</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/xiuchang_a82cc2f2b433448bb44f8b7065c8084e_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">小鱼-三周年啦</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/xiuchang_04a1d2ae137a4f28a7653840ee8553f2_180_101.jpg"
+                                                width="220px" height="124px">
+                                        </div>
+                                        <div class="inner-des">郭嘉MaxVol乐队</div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推广广告 -->
+        <div class="main7" id="mainADV">
+            <div class="main7-inner">
+                <div class="main-inner-title">推广广告</div>
+                <div class="main7-bottom">
+                    <div class="outer5">
+                        <div class="box">
+                            <ul class="inner" id="inner7">
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/a_100133327_m_601_m3_480_270.jpg" width="220px"
+                                                height="100px">
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/6827b1b8d3_xxx.jpg" width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/1b425ddfff_xxx.jpg" width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/b8d515f9d3_xxx.jpg" width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/607a1f1f-3e9f-4d48-b2ca-6eef62e927ae_static.jpg"
+                                                width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/3840b45d16_xxx.jpg" width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/42e3cb9556_xxx.jpg" width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner-div">
+                                        <div class="inner-img">
+                                            <img src="./images/c36f1456-bc59-426b-8cc1-6e6fbe705360_static.jpg"
+                                                width="220px" height="100px">
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inner-top-btn right main7-btn-right">
+                        <div class="turnBtn7"></div>
+
+                        <a class="btnRight"><i class="fa fa-3x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="inner-top-btn left main7-btn-left">
+                        <div class="turnBtn7"></div>
+                        <a class="btnLeft"><i class="fa fa-3x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 纪录片 -->
+        <div class="main8" id="mainJILU">
+            <div class="main8_inner">
+                <div class="main8_inner_left">
+                    <div class="main3_inner_leftt_top">
+                        <div class="left inner_leftt_top_title">纪录片</div>
+                        <div class="left">
+                            <ul id="main3_inner_leftt_top_list">
+                                <li>辣子曰</li>
+                                <li>|</li>
+                                <li>生门·纪实剧</li>
+                                <li>|</li>
+                                <li>中国医生</li>
+                                <li>|</li>
+                                <li>地球脉动</li>
+                                <li>|</li>
+                                <li>恐龙星球</li>
+                                <li>|</li>
+                                <li>从秦始皇到汉武帝</li>
+                                <li>|</li>
+                                <li>BBC：海洋</li>
+                                <li>|</li>
+                                <li>更多></li>
+
+                            </ul>
+                        </div>
+                        <div class="right" style="margin-right: 10px;">
+                            <div id="turnBtn8"></div>
+                            <a class="btnLeft"><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i> </a>
+                            <a class="btnRight"><i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="main2_inner_leftt_bottom">
+                        <div class="outer6">
+                            <div class="box">
+                                <ul class="inner" id="inner8">
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100016485_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/VIP@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">6集全</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">烟火气里的武汉·首播</div>
+                                                <div class="box_inner_li_div_botton_des">袁弘余少群尝热干面小龙虾</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100117057_m_601_m2_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/VIP@2x.png"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">荒野求生</div>
+                                                <div class="box_inner_li_div_botton_des">贝尔奥尼尔千里越野</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100407066_m_601_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/only@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">1集全</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">荒野求生：奥巴马特辑</div>
+                                                <div class="box_inner_li_div_botton_des">总统加入贝爷豪华午餐</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/fa47ac206acc4e80950f29343e0d9100.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/VIP@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">10集全</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">大唐帝陵·收官开元将启</div>
+                                                <div class="box_inner_li_div_botton_des">太平公主欲兵变掰头李隆基</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/v_150918960_m_601_m7_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/fufei@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">10集全</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">影响世界的中国植物</div>
+                                                <div class="box_inner_li_div_botton_des">4K呈现奇妙植物世界</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100366867_m_601_m1_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/fufei@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">6集全</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">非洲大公园</div>
+                                                <div class="box_inner_li_div_botton_des">关于生命的斗争故事</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100404243_m_601_m4_120_160.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">更新至3集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">任生重启·收官</div>
+                                                <div class="box_inner_li_div_botton_des">任重见证武汉生活重启</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="box_inner_li_div">
+                                            <div class="box_inner_li_div_top">
+                                                <div class="box_inner_li_div_img1"><img
+                                                        src="./images/a_100038946_m_601_m4_260_360.jpg" alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_zizhi"><img src="./images/yongquan@2x.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="box_inner_li_div_update">更新至14集</div>
+                                            </div>
+                                            <div class="box_inner_li_div_botton">
+                                                <div class="box_inner_li_div_botton_title">潜行天下第3季</div>
+                                                <div class="box_inner_li_div_botton_des">聆听海洋的呼吸</div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 盗墓传奇不 -->
+        <div class="main6" id="mainDAOMU">
+            <div class="main6-inner">
+                <div class="main6-inner-top">盗墓传奇不止鬼吹灯</div>
+                <ul class="main6-inner-list">
+                    <li>
+                        <div>
+                            <img src="./images/v_115505617_m_601_m34_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">老九门番外之虎骨梅花</div>
+                            <div class="main6-inner-list-span">九爷携副官破连环凶案</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50056186_m_601_m13_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">木乃伊</div>
+                            <div class="main6-inner-list-span">古埃及神祗奇幻迷城</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_151641133_m_601_m3_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">云南虫谷</div>
+                            <div class="main6-inner-list-span">摸金校尉再探古墓</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50739926_m_601_m10_480_270.jpg " alt="" height="104px">
+                            <div class="main6-inner-list-title">十二生肖</div>
+                            <div class="main6-inner-list-span">成龙勇救失踪兽首</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50116213_m_601_m9_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">木乃伊2</div>
+                            <div class="main6-inner-list-span">木乃伊重新回归</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50114111_m_601_m8_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">木乃伊3</div>
+                            <div class="main6-inner-list-span">中国风经典木乃伊来袭</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- 神话剧 -->
+        <div class="main6" id="mainSHENGHUA">
+            <div class="main6-inner">
+                <div class="main6-inner-top">神话剧</div>
+                <ul class="main6-inner-list">
+                    <li>
+                        <div>
+                            <img src="./images/v_50046494_m_601_m7_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">人鬼神</div>
+                            <div class="main6-inner-list-span">郭品超陈浩民恶战妖魔</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_108675644_m_601_m8_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">97家有喜事</div>
+                            <div class="main6-inner-list-span">三兄弟不寻常的爱情</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_109575112_m_601_m6_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">旺角街头</div>
+                            <div class="main6-inner-list-span">绝症女改变古惑仔</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_112875992_m_601_m3_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">旺角街头（粤语）</div>
+                            <div class="main6-inner-list-span">任达华黎姿虐恋</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_124169048_m_601_m20_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">狱中龙</div>
+                            <div class="main6-inner-list-span">刘德华版监狱风云</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./images/v_50069639_m_601_m14_480_270.jpg" alt="" height="104px">
+                            <div class="main6-inner-list-title">九星报喜</div>
+                            <div class="main6-inner-list-span">98群星贺岁笑片</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-inner-top">
+                    <div class="footer-inner-top-item">
+                        <div class="footer-inner-top-title">关于我们</div>
+                        <div>
+                            <ul>
+                                <li>公司介绍</li>
+                                <li>联系方式</li>
+                                <li>Investor Relations</li>
+                            </ul>
+                            <ul>
+                                <li>新闻动态</li>
+                                <li>爱奇艺招聘</li>
+                                <li>Media Center</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-inner-top-item">
+                        <div class="footer-inner-top-title">生态合作</div>
+                        <div>
+                            <ul>
+                                <li>内容合作</li>
+                                <li>会员合作</li>
+                                <li>爱奇艺号</li>
+                            </ul>
+                            <ul>
+                                <li>广告合作</li>
+                                <li>技术合作</li>
+                                <li>互动视频标准</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-inner-top-item">
+                        <div class="footer-inner-top-title">服务</div>
+                        <div>
+                            <ul>
+                                <li>用户协议</li>
+                                <li>帮助与反馈</li>
+                            </ul>
+                            <ul>
+                                <li>隐私政策</li>
+                                <li>爱奇艺招聘</li>
+                                <li>侵权举报与投诉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hengxian"></div>
+                </div>
+                <div class="footer-inner-bottom">
+                    <div class="footer-inner-bottom-item">
+                        <ul>
+                            <li><a href="#">营业执照</a></li>
+                            <li><a href="#">京网文[2018]6272-484号</a></li>
+                            <li><a href="#">信息网络传播视听节目许可证 0110544号</a></li>
+                            <li><a href="#">广播电视节目制作经营许可证 (京)字第1938号</a></li>
+                            <li><a href="#">中国互联网诚信联盟</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-inner-bottom-item">
+                        <ul>
+                            <li><a href="#">出版物经营许可证</a></li>
+                            <li><a href="#">京ICP备11032965号</a></li>
+                            <li><a href="#">经营性网站备案信息</a></li>
+                            <li><a href="#">京公网安备 11000002002047号</a></li>
+                            <li class="footer-inner-bottom-item-text">增值电信业务经营许可证 B2-20120273</li>
+                        </ul>
+                    </div>
+                    <div class="footer-inner-bottom-item">
+                        <ul>
+                            <li><a href="#">互联网药品信息服务资格证书</a></li>
+                            <li><a href="#">食品经营许可证 JY11108111598788</a></li>
+                            <li><a href="#">网上有害信息举报专区</a></li>
+                            <li><a href="#">网络举报APP下载</a></li>
+                            <li><a href="#">反盗版和反盗链权利声明</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-inner-bottom-item">
+                        <ul>
+                            <li class="footer-inner-bottom-item-text">违法和不良信息举报电话：400-923-7171</li>
+                            <li><a href="#">举报邮箱：jubao365@qiyi.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-inner-bottom-item">
+                        <ul>
+                            <li class="footer-inner-bottom-item-text">Copyright © 2020</li>
+                            <li><a href="#">爱奇艺</a></li>
+                            <li class="footer-inner-bottom-item-text">All Rights Reserved</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script>
+
+    function roll(oneRoll, turnBtn) {
+        var step = 0;
+        var count = $("" + oneRoll + " li").length / 2;
+        var $inner = $("" + oneRoll + "");
+        var $turnBtn = $("" + turnBtn + "");
+        var liWidth = $("" + oneRoll + " li").outerWidth() * 4;
+        var ulWidth = liWidth * count + 'px';
+        console.log($turnBtn.siblings().filter(".btnRight"))
+        //算出整个ul撑开的宽度
+        $inner.css("left", "0");
+        $("" + oneRoll + "").css({
+            "width": ulWidth
+        });
+
+        $turnBtn.siblings().filter(".btnLeft").hide();
+        if (count <= 3) {
+            $turnBtn.siblings().filter(".btnRight").hide();
+        }
+
+        //点左按钮
+        $turnBtn.siblings().filter(".btnLeft").off("click").on("click", function () {
+            $turnBtn.siblings().filter(".btnRight").show();
+            step -= 1;
+            console.log(1)
+            $inner.stop().animate({
+                left: -step * liWidth
+            }, 500);
+            if (step < 1) {
+                $(this).hide();
+            }
+        })
+        //点右按钮
+        $turnBtn.siblings().filter(".btnRight").off("click").on("click", function () {
+            step += 1;
+            console.log(2)
+            var myStep = step - 1;
+            if (myStep == count - 4) {
+                $turnBtn.siblings().filter(".btnRight").hide();
+            }
+            $inner.stop().animate({
+                left: -step * liWidth
+            }, 500);
+            $turnBtn.siblings().filter(".btnLeft").show();
+        })
+    }
+    // (function () {
+    //     var step = 0, count = $(".inner li").length - 4;
+    //     var $inner = $("#inner");
+    //     function autoMove() {
+    //         step++;
+    //         if (step > count) {
+    //             $inner.css("left", 0);
+    //             step = 0;
+    //         }
+    //         $inner.stop().animate({ left: -step * 219 }, 500);
+    //     }
+
+    //     //->左右切换
+    //     $(".turnBtn").on("click", "a", function () {
+    //         if ($(this).index() == 1) {   //左
+    //             step--;
+    //             if (step < 0) {
+    //                 $inner.css("left", -count * 219);
+    //                 step = count - 1;
+    //             }
+    //             $inner.stop().animate({ left: -step * 219 }, 500);
+    //         } else {   //右
+    //             autoMove();
+    //         }
+    //     });
+    // })();
+
+    $(function () {
+
+        roll("#inner", "#turnBtn1")
+        roll("#inner1", "#turnBtn2")
+        roll("#inner3", "#turnBtn3")
+        roll("#inner4", "#turnBtn4")
+        roll("#inner6", "#turnBtn6")
+        roll("#inner7", ".turnBtn7")
+        roll("#inner8", "#turnBtn8")
+    })
+</script>
+
+</html>

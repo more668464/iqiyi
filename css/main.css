@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+li{
+   list-style:none;
+}
+img{
+    border: none;
+}
+article,section,nav,header,aside,footer,address{
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
